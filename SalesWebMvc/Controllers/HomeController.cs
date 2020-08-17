@@ -12,20 +12,14 @@ namespace SalesWebMvc.Controllers
     {
         public IActionResult Index()
         {
-            return View();
-        }
-
-        public IActionResult About()
-        {
             ViewData["Message"] = "Sales Web MVC from C# Course";
-            ViewData["Professor"] = "Nelio Alves";
-
+            ViewData["By"] = "Ricardo Gomes";
             return View();
         }
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "My contact.";
 
             return View();
         }
